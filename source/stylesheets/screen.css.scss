@@ -1,0 +1,82 @@
+@import 'partials/base';
+
+
+// Global
+// --------------------------------------------------
+body {
+  background: $bodyBackground image-url('backgrounds/bg-page.png') repeat;
+  color: $textColor;
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: $baseFontFamily;
+}
+
+
+// Typography
+// --------------------------------------------------
+h1, h2, h3,
+h4, h5, h6 {
+  line-height: 1.25;
+}
+
+p {
+  font-weight: 300;
+}
+
+
+// Header
+// --------------------------------------------------
+.site-header {
+
+}
+
+
+// Main Content
+// --------------------------------------------------
+// .main-content {
+//   @extend %container-fluid;
+  
+//   .content {
+//     @extend .row-fluid;  
+//   }
+//   .sidebar {
+//     @include respond-to(47em) {
+//       float: left;
+//       @extend .span3; // Cannot use this type of @extend within a media query
+//     }
+//   } //sidebar
+
+//   .main-article {
+//     @include respond-to(47em) {
+//       float: left;
+//       @extend .span8;   // Cannot use this type of @extend within a media query
+//       @extend .offset1; // Cannot use this type of @extend within a media query
+//     }
+//   } //main-article
+// } //main-content
+
+.main-content {
+  @include container;
+  .content {
+    @extend %group;
+  }
+  .sidebar {
+    @include respond-to(47em) {
+      @include span-columns(3, 12);
+    }
+  } //sidebar
+  .main-article {
+    @include respond-to(47em) {
+      @include span-columns(8 omega, 12);
+    }
+  } //main-article
+} //main-content
+
+
+
+
+// Footer
+// --------------------------------------------------
+.site-footer {
+
+}
