@@ -13,8 +13,8 @@ $black:                 #000;
 $grayDarker:            #222;
 $grayDark:              #333;
 $gray:                  #555;
-$grayLight:             #999;
-$grayLighter:           #eee;
+$grayLight:             #D0D0D0;
+$grayLighter:           #F4F4F4;
 $white:                 #fff;
 
 
@@ -32,8 +32,8 @@ $purple:                #7a43b6;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $white;
-$textColor:             $grayDark;
+$bodyBackground:        $grayLight;
+$textColor:             $grayDarker;
 
 
 // Links
@@ -46,11 +46,11 @@ $linkColorHover:        darken($linkColor, 15%);
 // -------------------------
 $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif;
-$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+$monoFontFamily:        "source-code-pro", Monaco, Menlo, Consolas, "Courier New", monospace;
 
-$baseFontSize:          14px;
-$baseFontFamily:        $sansFontFamily;
-$baseLineHeight:        20px;
+$baseFontSize:          16px;
+$baseFontFamily:        $monoFontFamily;
+$baseLineHeight:        24px;
 $altFontFamily:         $serifFontFamily;
 
 $headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
